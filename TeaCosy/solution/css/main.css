@@ -1,0 +1,44 @@
+body {
+  margin: 0 0 0 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.bodycontainer {
+  display: block;
+}
+
+.header {
+  margin: 10px;
+  display: flex;
+  background-color: green;
+
+  display: flex;
+  align-content: center;     /* vertically center */
+  justify-content: space-between;
+}
+
+.logo {
+  /* margin: 0 0 0 10px; */
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-content: center;     /* vertically center */
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: red;
+}
+
+.maincontainer {
+  
+}
