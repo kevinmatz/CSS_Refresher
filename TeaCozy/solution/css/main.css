@@ -2,9 +2,22 @@ body {
   margin: 0 0 0 0;
   font-family: Helvetica;
   font-size: 22px;
+  line-height: normal;
   color: seashell;
   background-color: black;
   opacity: 0.9;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-bottom: 10px;
 }
 
 .bodycontainer {
@@ -19,13 +32,14 @@ body {
   align-items: center;     /* vertically center */
   justify-content: space-between;
 
-  /* background-color: green; */
+  background-color: black;
   border-bottom: 1px solid seashell;
 
   /* Make the header "sticky" -- not working though */
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;   /* Make sure the header is overlaid over all other content */
 }
 
 .logo {
@@ -121,17 +135,43 @@ body {
 .locationsimagecontainer img {
   width: 100%;
   height: auto;
+/*
+  height: 700px;
+*/
 }
 
 .locationsimageoverlay {
   position: absolute;
 
+  /*
   width: 100%;
+  text-align: center;
+  */
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.locationcards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.locationcard {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   background-color: black;
-}
 
+  max-width: 300px;
+  margin: 15px 20px 10px 20px;
+  padding: 5px 25px 30px 25px;
+}
 
 .bottomsection {
   height: 200px;
