@@ -75,6 +75,37 @@ body {
   background-color: black;
 }
 
+.teaofthemonthheader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.centeringdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.teaofthemonthimages {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teacard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+
+.teacard img {
+  width: 300px;
+  height: 200px;
+}
+
 .bottomsection {
   height: 200px;
   display: flex;
