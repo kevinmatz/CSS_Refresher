@@ -12,13 +12,15 @@ body {
 }
 
 .header {
-  margin: 10px;
-  display: flex;
-  background-color: green;
+  height: 69px;
+  padding: 0px 10px 0px 10px;
 
   display: flex;
-  align-content: center;     /* vertically center */
+  align-items: center;     /* vertically center */
   justify-content: space-between;
+
+  /* background-color: green; */
+  border-bottom: 1px solid seashell;
 }
 
 .logo {
@@ -31,14 +33,52 @@ body {
 
 .navbar {
   display: flex;
-  align-content: center;     /* vertically center */
+  align-items: center;     /* vertically center */
   justify-content: space-around;
 }
 
+.navbar a {
+  text-decoration: underline;
+}
+
+.navitem {
+  margin: 0 0px 0 14px;
+}
+
 .footer {
-  background-color: red;
+  height: 20px;
+  /* background-color: red; */
 }
 
 .maincontainer {
   
 }
+
+.topimagecontainer {
+  display: flex;
+  align-items: center;  /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+  position: relative;
+}
+
+.topimagecontainer img {
+  width: 100%;
+  height: auto;
+}
+
+.topimageoverlay {
+  position: absolute;
+
+  width: 100%;
+  text-align: center;
+
+  background-color: black;
+}
+
+.bottomsection {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
