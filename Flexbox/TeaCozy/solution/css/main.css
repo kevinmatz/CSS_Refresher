@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;    /* Use the border-box model instead of content-box default for more reliable sizing */
+}
+
 body {
   margin: 0 0 0 0;
   font-family: Helvetica;
