@@ -1,0 +1,62 @@
+.container {
+  max-width: 80%;    /*  or 800px, etc. */
+
+  /* Center the grid: */
+  position: relative;
+  margin: 0 auto;
+  /* justify-content: end; */   /* Left-justify/center/right-justify the entire grid?
+                                   Doesn't seem to work, even after removing "position: relative;"
+                                   and "margin: 0 auto;" */
+
+  display: grid;
+  gap: 5px;
+                                 
+  grid-template-areas: "header header header header"
+                       "nav nav nav nav"
+                       "left left right right"
+                       "left left right right"
+                       "left left right right"
+                       "footer footer footer footer";
+  grid-template-columns: 200px repeat(2, 1fr) 6fr;    /* First column fixed to 200px, 1/8 of the remaining free
+                                                         space goes to the second column, 1/8 to the third column,
+                                                         and 6/8 to the fourth column */
+  grid-template-rows: 80px 60px 100px 100px 100px 100px;
+
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: green;
+}
+
+nav {
+  grid-area: nav;
+  background-color: yellow;
+}
+
+.left {
+  grid-area: left;
+  background-color: gray;
+}
+
+.right {
+  grid-area: right;
+  background-color: beige;
+}
+
+footer {
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
+
+.overlap {
+  background-color: lightcoral;
+  grid-area: 4 / 2 / span 1 / span 2;    /* row start, column start, row end (+1, or use span to
+                                            specify number of columns), column end */
+  z-index: 5;   /* Bring to front */
+}
+
